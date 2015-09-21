@@ -1,4 +1,4 @@
-# example.com
-example.com
+# aegirproject.com
+aegirproject.com
 
-wtf
+website for the Aegir Project support coop etc
