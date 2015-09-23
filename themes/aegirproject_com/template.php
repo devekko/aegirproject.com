@@ -473,7 +473,8 @@ function obiba_bootstrap_preprocess_page(&$variables) {
     // Hide tabs user menu if not logged user.
     unset($variables['tabs']);
   }
-  $variables['profile_path'] = obiba_bootstrap_get_user_profile_page();
+  #$variables['profile_path'] = obiba_bootstrap_get_user_profile_page();
+  $variables['profile_path'] = 'user';
 }
 
 /**
