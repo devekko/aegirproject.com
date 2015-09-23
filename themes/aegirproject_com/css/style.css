@@ -6248,7 +6248,7 @@ body.admin-menu .navbar-fixed-top {
   margin-right: 10px;
 }
 .navbar .logo img {
-  width: 30px;
+  /*width: 30px;*/
   height: 30px;
 }
 #site-name {
