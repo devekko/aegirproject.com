@@ -444,7 +444,7 @@ function obiba_bootstrap_letters_badge_title() {
  *
  * @see page.tpl.php
  */
-function obiba_bootstrap_preprocess_page(&$variables) {
+function aegirproject_com_preprocess_page(&$variables) {
   // Add badge letter.
   $first_letter_title = obiba_bootstrap_letters_badge_title();
   if (!empty($first_letter_title)) {
