@@ -78,7 +78,7 @@ function aegirproject_com_front_page_default_page_manager_pages() {
 [img responsive="true" xclass="jumbotron-icons aegir-icon"] <img src="sites/ergonlogic.git2.aegir3.devekko.io/themes/aegirproject_com/assets/aegir_logo_notext.png" /> [/img]
 [/container]
 [/jumbotron]',
-      'format' => 'full_html',
+      'format' => 'shortcodes',
       'substitute' => TRUE,
     );
     $pane->cache = array();
