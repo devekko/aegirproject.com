@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AegirProject.com feature.
+ */
+
+include_once 'aegirproject_com.features.inc';
