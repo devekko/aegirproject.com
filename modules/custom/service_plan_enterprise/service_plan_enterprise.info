@@ -1,0 +1,12 @@
+name = ￼Service Plan: Enterprise
+description = Enterprise support subscription (monthly)
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = service_plan
+dependencies[] = strongarm
+dependencies[] = uuid_features
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 8be855cf-5aa7-46a6-858e-cf83fb163fb1

@@ -1,0 +1,12 @@
+name = Service Plan: Premium
+description = Premium support subscription (monthly)
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = service_plan
+dependencies[] = strongarm
+dependencies[] = uuid_features
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 7f4349f3-8db5-4577-9f5d-1d8fe8f08952

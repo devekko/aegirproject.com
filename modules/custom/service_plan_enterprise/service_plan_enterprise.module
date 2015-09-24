@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ￼Service Plan: Enterprise feature.
+ */
+
+include_once 'service_plan_enterprise.features.inc';

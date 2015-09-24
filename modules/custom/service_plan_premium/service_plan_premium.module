@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Service Plan: Premium feature.
+ */
+
+include_once 'service_plan_premium.features.inc';
