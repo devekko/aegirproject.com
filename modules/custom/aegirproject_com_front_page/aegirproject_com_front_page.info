@@ -1,0 +1,14 @@
+name = AegirProject.com: Front page
+description = Front page for AegirProject.com
+core = 7.x
+package = Features
+dependencies[] = bs_shortcodes
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = strongarm
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[page_manager_pages][] = front_page
+features[variable][] = site_frontpage
+project path = sites/ergonlogic.git2.aegir3.devekko.io/modules/custom

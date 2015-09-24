@@ -1,3 +1,43 @@
 /**
- * Styles for the {{ THEME NAME }} theme.
+ * Styles for the AegirProject.com theme.
  */
+
+/**
+ * Front-page jumbotron.
+ */
+.front > .container.main-container{
+  padding: 0;
+  width: 100%;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0;
+  color: #DEF5F0;
+  background-color: #0B3F72;
+  text-align: center;
+}
+header#navbar {
+  margin-bottom: 0;
+}
+body.navbar-is-fixed-top.front {
+  padding-top: 48px!important;
+}
+.jumbotron-icons {
+  height: 80px;
+  display: inline;
+  margin: 20px;
+}
+.jumbotron-icons.aegir-icon {
+  height: 70px;
+}
+.jumbotron i {
+  font-size: 200%;
+}
+
+
+
+/**
+ * Logo
+ */
+.logo > img {
+  height: 30px;
+}
