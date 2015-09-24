@@ -6,14 +6,14 @@
 
 include_once 'aegirproject_com.features.inc';
 
-function aegirproject_com_theme_pre_features_enable_feature($component) {
+function aegirproject_com_pre_features_enable_feature($component) {
   // Enable custom theme and disable bartik
   $themes = list_themes();
   if ( $themes['aegirproject_com']->status == 0 ) {
     theme_enable(array('aegirproject_com'));
   }
 
-  if ( $themes['bartik']->status == 1 ) {
-    theme_disable(array('bartik'));
+  if ( $themes['bootstrap']->status == 1 ) {
+    theme_disable(array('bootstrap'));
   }
 }
