@@ -43,36 +43,26 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Price */
-  $handler->display->display_options['fields']['field_price']['id'] = 'field_price';
-  $handler->display->display_options['fields']['field_price']['table'] = 'field_data_field_price';
-  $handler->display->display_options['fields']['field_price']['field'] = 'field_price';
-  $handler->display->display_options['fields']['field_price']['label'] = 'Monthly price per CPU (USD)';
-  $handler->display->display_options['fields']['field_price']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_price']['alter']['text'] = '$[field_price]';
-  $handler->display->display_options['fields']['field_price']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_price']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_price']['settings'] = array(
-    'thousand_separator' => ' ',
-    'decimal_separator' => '.',
-    'scale' => '2',
-    'prefix_suffix' => 1,
-  );
-  $handler->display->display_options['fields']['field_price']['field_api_classes'] = TRUE;
+  $handler->display->display_options['fields']['field_monthly_price']['id'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['table'] = 'field_data_field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['field'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['label'] = 'Monthly price per CPU';
+  /* Field: Content: Stable software updates */
+  $handler->display->display_options['fields']['field_stable_software_updates']['id'] = 'field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['table'] = 'field_data_field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['field'] = 'field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['element_label_colon'] = FALSE;
   /* Field: Content: Access to pre-built images */
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['id'] = 'field_access_to_pre_built_images';
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['table'] = 'field_data_field_access_to_pre_built_images';
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['field'] = 'field_access_to_pre_built_images';
+  $handler->display->display_options['fields']['field_access_to_pre_built_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['element_label_colon'] = FALSE;
   /* Field: Content: Advance security notifications */
   $handler->display->display_options['fields']['field_advance_security_notificat']['id'] = 'field_advance_security_notificat';
   $handler->display->display_options['fields']['field_advance_security_notificat']['table'] = 'field_data_field_advance_security_notificat';
   $handler->display->display_options['fields']['field_advance_security_notificat']['field'] = 'field_advance_security_notificat';
   $handler->display->display_options['fields']['field_advance_security_notificat']['element_label_colon'] = FALSE;
-  /* Field: Content: Stable software updates */
-  $handler->display->display_options['fields']['field_stable_software_updates']['id'] = 'field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['table'] = 'field_data_field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['field'] = 'field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['element_label_colon'] = FALSE;
   /* Field: Content: Required and optional features */
   $handler->display->display_options['fields']['field_required_and_optional_feat']['id'] = 'field_required_and_optional_feat';
   $handler->display->display_options['fields']['field_required_and_optional_feat']['table'] = 'field_data_field_required_and_optional_feat';
@@ -104,10 +94,10 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['table'] = 'field_data_field_support_via_phone_hangout';
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['field'] = 'field_support_via_phone_hangout';
   /* Field: Content: Tickets per year (per CPU) */
-  $handler->display->display_options['fields']['field_tickets_per_year']['id'] = 'field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['table'] = 'field_data_field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['field'] = 'field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['empty'] = '-';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['id'] = 'field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['table'] = 'field_data_field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['field'] = 'field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['element_label_colon'] = FALSE;
   /* Field: Content: Get additional tickets */
   $handler->display->display_options['fields']['field_get_additional_tickets']['id'] = 'field_get_additional_tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['table'] = 'field_data_field_get_additional_tickets';
@@ -128,10 +118,10 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_schedule']['table'] = 'field_data_field_support_schedule';
   $handler->display->display_options['fields']['field_support_schedule']['field'] = 'field_support_schedule';
   $handler->display->display_options['fields']['field_support_schedule']['empty'] = '-';
-  /* Sort criterion: Content: Price (field_price) */
-  $handler->display->display_options['sorts']['field_price_value']['id'] = 'field_price_value';
-  $handler->display->display_options['sorts']['field_price_value']['table'] = 'field_data_field_price';
-  $handler->display->display_options['sorts']['field_price_value']['field'] = 'field_price_value';
+  /* Sort criterion: Content: Weight (field_weight) */
+  $handler->display->display_options['sorts']['field_weight_value']['id'] = 'field_weight_value';
+  $handler->display->display_options['sorts']['field_weight_value']['table'] = 'field_data_field_weight';
+  $handler->display->display_options['sorts']['field_weight_value']['field'] = 'field_weight_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -238,6 +228,17 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Stable software updates */
+  $handler->display->display_options['fields']['field_stable_software_updates']['id'] = 'field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['table'] = 'field_data_field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['field'] = 'field_stable_software_updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['label'] = '';
+  $handler->display->display_options['fields']['field_stable_software_updates']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_stable_software_updates']['alter']['text'] = 'Stable software updates';
+  $handler->display->display_options['fields']['field_stable_software_updates']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_stable_software_updates']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_stable_software_updates']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_stable_software_updates']['type'] = 'list_key';
   /* Field: Content: Access to pre-built images */
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['id'] = 'field_access_to_pre_built_images';
   $handler->display->display_options['fields']['field_access_to_pre_built_images']['table'] = 'field_data_field_access_to_pre_built_images';
@@ -261,17 +262,6 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_advance_security_notificat']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_advance_security_notificat']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_advance_security_notificat']['type'] = 'list_key';
-  /* Field: Content: Stable software updates */
-  $handler->display->display_options['fields']['field_stable_software_updates']['id'] = 'field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['table'] = 'field_data_field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['field'] = 'field_stable_software_updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['label'] = '';
-  $handler->display->display_options['fields']['field_stable_software_updates']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_stable_software_updates']['alter']['text'] = 'Stable software updates';
-  $handler->display->display_options['fields']['field_stable_software_updates']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_stable_software_updates']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_stable_software_updates']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_stable_software_updates']['type'] = 'list_key';
   /* Field: Content: Required and optional features */
   $handler->display->display_options['fields']['field_required_and_optional_feat']['id'] = 'field_required_and_optional_feat';
   $handler->display->display_options['fields']['field_required_and_optional_feat']['table'] = 'field_data_field_required_and_optional_feat';
@@ -350,16 +340,13 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_support_via_phone_hangout']['type'] = 'list_key';
   /* Field: Content: Tickets per year (per CPU) */
-  $handler->display->display_options['fields']['field_tickets_per_year']['id'] = 'field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['table'] = 'field_data_field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['field'] = 'field_tickets_per_year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['label'] = 'Tickets per year';
-  $handler->display->display_options['fields']['field_tickets_per_year']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_tickets_per_year']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_tickets_per_year']['empty_zero'] = TRUE;
-  $handler->display->display_options['fields']['field_tickets_per_year']['settings'] = array(
-    'trim_length' => '600',
-  );
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['id'] = 'field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['table'] = 'field_data_field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['field'] = 'field_tickets_per_year_per_cpu';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['label'] = '';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['alter']['text'] = '[field_tickets_per_year_per_cpu] tickets per year';
+  $handler->display->display_options['fields']['field_tickets_per_year_per_cpu']['element_label_colon'] = FALSE;
   /* Field: Content: Get additional tickets */
   $handler->display->display_options['fields']['field_get_additional_tickets']['id'] = 'field_get_additional_tickets';
   $handler->display->display_options['fields']['field_get_additional_tickets']['table'] = 'field_data_field_get_additional_tickets';
@@ -389,20 +376,13 @@ function service_plan_views_default_views() {
   $handler->display->display_options['fields']['field_response_time']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_response_time']['hide_empty'] = TRUE;
   /* Field: Content: Price */
-  $handler->display->display_options['fields']['field_price']['id'] = 'field_price';
-  $handler->display->display_options['fields']['field_price']['table'] = 'field_data_field_price';
-  $handler->display->display_options['fields']['field_price']['field'] = 'field_price';
-  $handler->display->display_options['fields']['field_price']['label'] = '';
-  $handler->display->display_options['fields']['field_price']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_price']['alter']['text'] = 'Subscribe for $[field_price]/month/CPU';
-  $handler->display->display_options['fields']['field_price']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_price']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_price']['settings'] = array(
-    'thousand_separator' => ' ',
-    'decimal_separator' => '.',
-    'scale' => '2',
-    'prefix_suffix' => 1,
-  );
+  $handler->display->display_options['fields']['field_monthly_price']['id'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['table'] = 'field_data_field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['field'] = 'field_monthly_price';
+  $handler->display->display_options['fields']['field_monthly_price']['label'] = '';
+  $handler->display->display_options['fields']['field_monthly_price']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_monthly_price']['alter']['text'] = 'Subscribe for [field_monthly_price]/month/CPU';
+  $handler->display->display_options['fields']['field_monthly_price']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */

@@ -51,7 +51,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 33,
+      'weight' => 3,
     ),
   );
 
@@ -96,7 +96,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 34,
+      'weight' => 4,
     ),
   );
 
@@ -140,7 +140,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 37,
+      'weight' => 7,
     ),
   );
 
@@ -181,7 +181,7 @@ function service_plan_field_default_field_instances() {
         'size' => 15,
       ),
       'type' => 'text_textfield',
-      'weight' => 44,
+      'weight' => 13,
     ),
   );
 
@@ -225,7 +225,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 38,
+      'weight' => 8,
     ),
   );
 
@@ -266,12 +266,12 @@ function service_plan_field_default_field_instances() {
         'size' => 15,
       ),
       'type' => 'text_textfield',
-      'weight' => 45,
+      'weight' => 15,
     ),
   );
 
-  // Exported field_instance: 'node-service_plan-field_price'
-  $field_instances['node-service_plan-field_price'] = array(
+  // Exported field_instance: 'node-service_plan-field_monthly_price'
+  $field_instances['node-service_plan-field_monthly_price'] = array(
     'bundle' => 'service_plan',
     'default_value' => NULL,
     'deleted' => 0,
@@ -279,15 +279,10 @@ function service_plan_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 2,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_decimal',
-        'weight' => 1,
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -298,22 +293,21 @@ function service_plan_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'no_wrapper',
-    'field_name' => 'field_price',
+    'field_name' => 'field_monthly_price',
     'label' => 'Price',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '$',
-      'suffix' => '/CPU/month',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 32,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 6,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -358,7 +352,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 36,
+      'weight' => 6,
     ),
   );
 
@@ -399,7 +393,7 @@ function service_plan_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 46,
+      'weight' => 16,
     ),
   );
 
@@ -443,7 +437,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 35,
+      'weight' => 5,
     ),
   );
 
@@ -484,7 +478,7 @@ function service_plan_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 47,
+      'weight' => 17,
     ),
   );
 
@@ -529,7 +523,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 39,
+      'weight' => 9,
     ),
   );
 
@@ -573,7 +567,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 40,
+      'weight' => 10,
     ),
   );
 
@@ -618,7 +612,7 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 42,
+      'weight' => 12,
     ),
   );
 
@@ -662,12 +656,12 @@ function service_plan_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 41,
+      'weight' => 11,
     ),
   );
 
-  // Exported field_instance: 'node-service_plan-field_tickets_per_year'
-  $field_instances['node-service_plan-field_tickets_per_year'] = array(
+  // Exported field_instance: 'node-service_plan-field_tickets_per_year_per_cpu'
+  $field_instances['node-service_plan-field_tickets_per_year_per_cpu'] = array(
     'bundle' => 'service_plan',
     'default_value' => NULL,
     'deleted' => 0,
@@ -678,7 +672,7 @@ function service_plan_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -689,7 +683,7 @@ function service_plan_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'no_wrapper',
-    'field_name' => 'field_tickets_per_year',
+    'field_name' => 'field_tickets_per_year_per_cpu',
     'label' => 'Tickets per year (per CPU)',
     'required' => 0,
     'settings' => array(
@@ -700,10 +694,57 @@ function service_plan_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 2,
+        'size' => 10,
       ),
       'type' => 'text_textfield',
-      'weight' => 43,
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-service_plan-field_weight'
+  $field_instances['node-service_plan-field_weight'] = array(
+    'bundle' => 'service_plan',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
+    'field_name' => 'field_weight',
+    'label' => 'Weight',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 18,
     ),
   );
 
@@ -725,6 +766,7 @@ function service_plan_field_default_field_instances() {
   t('Support via phone/hangout');
   t('Support via remote SSH');
   t('Tickets per year (per CPU)');
+  t('Weight');
 
   return $field_instances;
 }

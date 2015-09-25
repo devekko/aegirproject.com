@@ -123,7 +123,7 @@ function service_plan_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => '-',
-        1 => '✓',
+        1 => 'Available',
       ),
       'allowed_values_function' => '',
     ),
@@ -152,23 +152,25 @@ function service_plan_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_price'
-  $field_bases['field_price'] = array(
+  // Exported field_base: 'field_monthly_price'
+  $field_bases['field_monthly_price'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_price',
-    'indexes' => array(),
+    'field_name' => 'field_monthly_price',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'number',
+    'module' => 'text',
     'settings' => array(
-      'decimal_separator' => '.',
-      'precision' => 10,
-      'scale' => 2,
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'number_decimal',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_required_and_optional_feat'
@@ -330,7 +332,7 @@ function service_plan_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => '-',
-        1 => '✓',
+        1 => 'Available',
       ),
       'allowed_values_function' => '',
     ),
@@ -363,13 +365,13 @@ function service_plan_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_tickets_per_year'
-  $field_bases['field_tickets_per_year'] = array(
+  // Exported field_base: 'field_tickets_per_year_per_cpu'
+  $field_bases['field_tickets_per_year_per_cpu'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_tickets_per_year',
+    'field_name' => 'field_tickets_per_year_per_cpu',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -378,10 +380,25 @@ function service_plan_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 2,
+      'max_length' => 255,
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_weight'
+  $field_bases['field_weight'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_weight',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
   );
 
   return $field_bases;

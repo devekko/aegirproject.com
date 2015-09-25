@@ -23,13 +23,6 @@ function service_plan_premium_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '7f4349f3-8db5-4577-9f5d-1d8fe8f08952',
-  'field_price' => array(
-    'und' => array(
-      0 => array(
-        'value' => '80.00',
-      ),
-    ),
-  ),
   'field_access_to_pre_built_images' => array(
     'und' => array(
       0 => array(
@@ -44,20 +37,6 @@ function service_plan_premium_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_stable_software_updates' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
-  'field_required_and_optional_feat' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
   'field_advanced_features' => array(
     'und' => array(
       0 => array(
@@ -65,10 +44,49 @@ function service_plan_premium_uuid_features_default_content() {
       ),
     ),
   ),
+  'field_designated_contacts' => array(
+    'und' => array(
+      0 => array(
+        'value' => '1+backup',
+        'format' => NULL,
+      ),
+    ),
+  ),
   'field_experimental_features' => array(
     'und' => array(
       0 => array(
         'value' => 0,
+      ),
+    ),
+  ),
+  'field_get_additional_tickets' => array(),
+  'field_required_and_optional_feat' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_response_time' => array(
+    'und' => array(
+      0 => array(
+        'value' => '1 business day',
+        'format' => NULL,
+      ),
+    ),
+  ),
+  'field_stable_software_updates' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_support_schedule' => array(
+    'und' => array(
+      0 => array(
+        'value' => '8x5',
+        'format' => NULL,
       ),
     ),
   ),
@@ -86,13 +104,6 @@ function service_plan_premium_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_support_via_remote_ssh' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
   'field_support_via_phone_hangout' => array(
     'und' => array(
       0 => array(
@@ -100,41 +111,38 @@ function service_plan_premium_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_tickets_per_year' => array(
+  'field_support_via_remote_ssh' => array(
     'und' => array(
       0 => array(
-        'value' => '∞',
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_monthly_price' => array(
+    'und' => array(
+      0 => array(
+        'value' => '$80.00',
         'format' => NULL,
       ),
     ),
   ),
-  'field_designated_contacts' => array(
+  'field_weight' => array(
     'und' => array(
       0 => array(
-        'value' => '1 (+1 backup)',
-        'format' => NULL,
+        'value' => 10,
       ),
     ),
   ),
-  'field_get_additional_tickets' => array(),
-  'field_response_time' => array(
+  'field_tickets_per_year_per_cpu' => array(
     'und' => array(
       0 => array(
-        'value' => '1 business day',
-        'format' => NULL,
-      ),
-    ),
-  ),
-  'field_support_schedule' => array(
-    'und' => array(
-      0 => array(
-        'value' => '8x5',
+        'value' => 'Unlimited',
         'format' => NULL,
       ),
     ),
   ),
   'date' => '2015-09-23 19:23:29 -0700',
-  'user_uuid' => 'd6425edb-0311-4e76-a122-516dde7d8fe2',
+  'user_uuid' => '1be415d7-9597-491f-b32f-8ee529f33783',
 );
   return $nodes;
 }

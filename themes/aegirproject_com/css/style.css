@@ -53,7 +53,7 @@ body.navbar-is-fixed-top.front {
   padding-left: 5px;
 }
 /* Pricing */
-.view-subscription-plans .views-table .views-field-field-price,
+.view-subscription-plans .views-table .views-field-field-monthly-price,
 /* Hosting Features*/
 .view-subscription-plans .views-table .views-field-field-required-and-optional-feat,
 .view-subscription-plans .views-table .views-field-field-advanced-features,
@@ -90,7 +90,7 @@ body.navbar-is-fixed-top.front {
 .view-subscription-plans div.views-field-field-support-via-community-foru,
 .view-subscription-plans div.views-field-field-support-via-email-portal,
 .view-subscription-plans div.views-field-field-support-via-remote-ssh,
-.view-subscription-plans div.views-field-field-tickets-per-year,
+.view-subscription-plans div.views-field-field-tickets-per-year-per-cpu,
 .view-subscription-plans div.views-field-field-response-time {
   position: relative;
   top: 10px;
@@ -100,9 +100,9 @@ body.navbar-is-fixed-top.front {
 .view-subscription-plans .col-4 div.views-field-field-advanced-features,
 .view-subscription-plans .col-2 div.views-field-field-support-via-email-portal,
 .view-subscription-plans .col-3 div.views-field-field-support-via-remote-ssh,
-.view-subscription-plans .col-2 div.views-field-field-tickets-per-year,
-.view-subscription-plans .col-3 div.views-field-field-tickets-per-year,
-.view-subscription-plans .col-4 div.views-field-field-tickets-per-year,
+.view-subscription-plans .col-2 div.views-field-field-tickets-per-year-per-cpu,
+.view-subscription-plans .col-3 div.views-field-field-tickets-per-year-per-cpu,
+.view-subscription-plans .col-4 div.views-field-field-tickets-per-year-per-cpu,
 .view-subscription-plans .col-2 div.views-field-field-response-time {
   font-style: italic;
 }
@@ -113,7 +113,7 @@ body.navbar-is-fixed-top.front {
 .view-subscription-plans td.col-4 {
   position: relative
 }
-.view-subscription-plans div.views-field-field-price {
+.view-subscription-plans div.views-field-field-monthly-price {
   font-weight: bold;
   position: absolute;
   bottom: 2%;
