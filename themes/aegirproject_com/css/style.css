@@ -33,11 +33,95 @@ body.navbar-is-fixed-top.front {
   font-size: 200%;
 }
 
-
-
 /**
  * Logo
  */
 .logo > img {
   height: 30px;
+}
+
+/**
+ * Price comparison
+ */
+.view-subscription-plans .views-table td,
+.view-subscription-plans .views-table thead th {
+  text-align: center;
+  padding: 0 10px;
+}
+.view-subscription-plans .views-table tbody th {
+  font-weight: normal;
+  padding-left: 5px;
+}
+/* Pricing */
+.view-subscription-plans .views-table .views-field-field-price,
+/* Hosting Features*/
+.view-subscription-plans .views-table .views-field-field-required-and-optional-feat,
+.view-subscription-plans .views-table .views-field-field-advanced-features,
+.view-subscription-plans .views-table .views-field-field-experimental-features,
+/* Volume */
+.view-subscription-plans .views-table .views-field-field-tickets-per-year,
+.view-subscription-plans .views-table .views-field-field-get-additional-tickets,
+.view-subscription-plans .views-table .views-field-field-designated-contacts {
+  background-color: lightgrey;
+}
+
+/**
+ * Support plans
+ */
+.view-subscription-plans .views-view-grid td {
+  text-align: center;
+  padding: 0px 10px 80px 10px;
+  margin: 10px;
+  background-color: lightgrey;
+  vertical-align: top;
+}
+.view-subscription-plans table.views-view-grid {
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+.view-subscription-plans div.views-field-title {
+  font-weight: bold;
+}
+/* Position features */
+.view-subscription-plans div.views-field-field-stable-software-updates,
+.view-subscription-plans div.views-field-field-advance-security-notificat,
+.view-subscription-plans div.views-field-field-required-and-optional-feat,
+.view-subscription-plans div.views-field-field-advanced-features,
+.view-subscription-plans div.views-field-field-support-via-community-foru,
+.view-subscription-plans div.views-field-field-support-via-email-portal,
+.view-subscription-plans div.views-field-field-support-via-remote-ssh,
+.view-subscription-plans div.views-field-field-tickets-per-year,
+.view-subscription-plans div.views-field-field-response-time {
+  position: relative;
+  top: 10px;
+}
+/* Highlight items new to this support level */
+.view-subscription-plans .col-3 div.views-field-field-advance-security-notificat,
+.view-subscription-plans .col-4 div.views-field-field-advanced-features,
+.view-subscription-plans .col-2 div.views-field-field-support-via-email-portal,
+.view-subscription-plans .col-3 div.views-field-field-support-via-remote-ssh,
+.view-subscription-plans .col-2 div.views-field-field-tickets-per-year,
+.view-subscription-plans .col-3 div.views-field-field-tickets-per-year,
+.view-subscription-plans .col-4 div.views-field-field-tickets-per-year,
+.view-subscription-plans .col-2 div.views-field-field-response-time {
+  font-style: italic;
+}
+/* Anchor price field for absolute positioning */
+.view-subscription-plans td.col-1,
+.view-subscription-plans td.col-2,
+.view-subscription-plans td.col-3,
+.view-subscription-plans td.col-4 {
+  position: relative
+}
+.view-subscription-plans div.views-field-field-price {
+  font-weight: bold;
+  position: absolute;
+  bottom: 2%;
+  right: 10%;
+  left: 10%;
+  background-color: #0B3F72;
+  color: #DEF5F0;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
 }

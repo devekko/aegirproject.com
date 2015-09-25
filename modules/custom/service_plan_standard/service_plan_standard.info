@@ -1,4 +1,5 @@
 name = Service Plan: Standard
+description = Standard support subscription (monthly)
 core = 7.x
 package = Features
 dependencies[] = ctools
