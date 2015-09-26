@@ -39,3 +39,9 @@ projects[shortcode][version] = "2.22"
 projects[views_bootstrap][subdir] = "contrib"
 projects[views_bootstrap][version] = "3.1"
 
+
+projects[panels_bootstrap_layouts][subdir] = "contrib"
+projects[panels_bootstrap_layouts][version] = "3.0"
+
+
+
