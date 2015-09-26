@@ -26,6 +26,13 @@ projects[views_flipped_table][version] = "1.0"
 projects[bs_shortcodes][subdir] = "contrib"
 projects[bs_shortcodes][version] = "1.0-beta3"
 
+; bs_shortcodes
+projects[bs_shortcodes][type] = module
+projects[bs_shortcodes][subdir] = "contrib"
+projects[bs_shortcodes][download][type] = git
+projects[bs_shortcodes][download][revision] = 1ca413978a0544692f3da29ba9bddc26f4347b33
+projects[bs_shortcodes][download][branch] = 7.x-1.x
+
 projects[shortcode][subdir] = "contrib"
 projects[shortcode][version] = "2.22"
 
