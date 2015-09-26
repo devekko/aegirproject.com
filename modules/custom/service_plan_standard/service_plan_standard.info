@@ -1,0 +1,12 @@
+name = Service Plan: Standard
+description = Standard support subscription (monthly)
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = service_plan
+dependencies[] = strongarm
+dependencies[] = uuid_features
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 4b0dadd3-ac47-4e5e-a120-de577ba28092

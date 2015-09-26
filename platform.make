@@ -14,7 +14,17 @@ projects[rune][download][url] = "https://github.com/poetic/rune.git"
 projects[rune][download][type] = "git"
 projects[rune][download][tag] = "0.0.9"
 
-;Themes
+; Themes
 projects[bootstrap][subdir] = "contrib"
 projects[bootstrap][version] = "3.1-beta3"
 projects[bootstrap][type] = "theme"
+
+; Modules
+projects[views_flipped_table][subdir] = "contrib"
+projects[views_flipped_table][version] = "1.0"
+
+projects[bs_shortcodes][subdir] = "contrib"
+projects[bs_shortcodes][version] = "7.x-1.0-beta3"
+projects[shortcode][subdir] = "contrib"
+projects[shortcode][version] = "7.x-2.22"
+

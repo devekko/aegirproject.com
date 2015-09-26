@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AegirProject.com: Front page feature.
+ */
+
+include_once 'aegirproject_com_front_page.features.inc';

@@ -1,0 +1,10 @@
+name = Text Format: shortcodes
+description = A basic text format that enabled Bootstrap shortcodes
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = shortcode
+features[features_api][] = api:2
+features[filter][] = shortcodes
+project path = sites/ergonlogic.git2.aegir3.devekko.io/modules/custom

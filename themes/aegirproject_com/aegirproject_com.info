@@ -1,5 +1,5 @@
-name = AegirProject.com Bootstrap subtheme
-description = Uses http://bootstrapcdn.com for all styles and JavaScript.
+name = AegirProject.com theme
+description = Bootstrap sub-theme using CDN sources.
 core = 7.x
 base theme = bootstrap
 

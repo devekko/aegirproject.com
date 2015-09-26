@@ -1,0 +1,16 @@
+name = AegirProject.com
+description = Simple brochure site for the Aegir Support Cooperative
+core = 7.x
+package = Features
+dependencies[] = aegirproject_com_front_page
+dependencies[] = ctools
+dependencies[] = service_plan
+dependencies[] = service_plan_basic
+dependencies[] = service_plan_community
+dependencies[] = service_plan_enterprise
+dependencies[] = service_plan_premium
+dependencies[] = service_plan_standard
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = theme_default

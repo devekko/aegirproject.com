@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Service Plan: Standard feature.
+ */
+
+include_once 'service_plan_standard.features.inc';

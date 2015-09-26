@@ -1,0 +1,12 @@
+name = Service Plan: Community
+description = Community support subscription (monthly)
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = service_plan
+dependencies[] = strongarm
+dependencies[] = uuid_features
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = f2fadb2b-5f73-4602-ab3d-de549c409006
